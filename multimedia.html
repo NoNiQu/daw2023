@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso HTML5-CSS3</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container shadow">
+        <header>
+            <div class="row align-items-center">
+                <div class="col-3"><img src="img/logoazar12.png" alt="logo" width="50"></div>
+                <div class="col-9">
+                    <span id="btnmenu" onclick="opendrawer()">&#9776;</span>
+                    <nav id="menu">
+                        <ul class="text-right">
+                            <li>
+                                <a href="index.html">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="parrafos.html">
+                                    Párrafos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="enlaces.html">
+                                    Enlaces
+                                </a>
+                            </li>
+                            <li>
+                                <a href="listas.html">
+                                    Listas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tablas.html">
+                                    Tablas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="formularios.html">
+                                    Formularios
+                                </a>
+                            </li>
+                            <li>
+                                <a href="multimedia.html">
+                                    Multimedia
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main class="shadow">
+            <div>
+                <h1 class="text-center bg-verde text-white py-3">HTML5 & CSS3</h1>
+            </div>
+            <div class="px-3">
+                <hr>
+            </div>
+            <div class="px-3">
+                <div id="multimedia" class="px-3">
+                    <h1 class="text-center">MULTIMEDIA</h1>
+                </div>
+                <div class="py-3">
+                    <p>Para poner videos se utiliza la etiqueta <strong>video,</strong> en donde debemos poner los
+                        diferentes tipos de formatos para que se pueda reproducir en todos los navegadores:</p>
+                    <ul>
+                        <li>Formato <strong>mp4.</strong></li>
+                        <li>Formato <strong>ogv.</strong></li>
+                        <li>Formato <strong>webm.</strong></li>
+                    </ul>
+                    <p>Para poner audio se utiliza la etiqueta <strong>audio,</strong> en donde debemos poner los
+                        diferentes tipos de formatos para que se pueda reproducir en todos los navegadores:</p>
+                    <ul>
+                        <li>Formato <strong>mpeg.</strong></li>
+                        <li>Formato <strong>ogg.</strong></li>
+                        <li>Formato <strong>wav.</strong></li>
+                    </ul>
+                    <p>También podemos poner videos en nuestra pagina web mediante la etiqueta <strong>iframe,</strong>
+                        que copiamos enteramente de la procedencia del mismo.</p>
+                    <h2>Audio</h2>
+                    <audio controls>
+                        <source src="resources/12.mp3" type="audio/mpeg">
+                    </audio>
+                    <div class="cd"></div>
+                    <div class="fizq">
+                        <h2>Video desde recursos propios</h2>
+                        <video controls>
+                            <source src="resources/mp4.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="fder">
+                        <h2>Video desde iframe</h2>
+                        <iframe width="625" height="360" src="https://www.youtube.com/embed/6j_NG37G9To?si=787S9e38vBQN6ijK"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="cb"></div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <h2 class="bg-verde text-center text-white py-3">&copy; Marcos Alarcón Alguacil | NoNiQu</h2>
+        </footer>
+    </div>
+    <script>
+        function opendrawer() {
+            document.getElementById('menu').style.display = 'block';
+            document.getElementById('menu').style.witdh = '100%';
+        }
+    </script>
+</body>
+
+</html>

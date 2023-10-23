@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso HTML5-CSS3</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container shadow">
+        <header>
+            <div class="row align-items-center">
+                <div class="col-3"><img src="img/logoazar12.png" alt="logo" width="50"></div>
+                <div class="col-9">
+                    <span id="btnmenu" onclick="opendrawer()">&#9776;</span>
+                    <nav id="menu">
+                        <ul class="text-right">
+                            <li>
+                                <a href="index.html">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="parrafos.html">
+                                    Párrafos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="enlaces.html">
+                                    Enlaces
+                                </a>
+                            </li>
+                            <li>
+                                <a href="listas.html">
+                                    Listas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tablas.html">
+                                    Tablas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="formularios.html">
+                                    Formularios
+                                </a>
+                            </li>
+                            <li>
+                                <a href="multimedia.html">
+                                    Multimedia
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+
+        </header>
+        <main class="shadow">
+            <div>
+                <h1 class="text-center bg-verde text-white py-3">HTML5 & CSS3</h1>
+            </div>
+            <div class="px-3">
+                <hr>
+            </div>
+            <div class="px-3">
+                <div id="tablas" class="px-3">
+                    <h1 class="text-center">TABLAS</h1>
+                    <div class="py-3">
+                        <p> Para formar tablas se utiliza la etiqueta <strong>table</strong> seguidas de las siguientes
+                            etiquetas <strong>tr, th y td.</strong></p>
+                        <ul>
+                            <li>La etiqueta <strong>tr</strong> es para hacer las diferentes columnas y filas.</li>
+                            <li>La etiqueta <strong>th</strong> es para celdas con encabezado.</li>
+                            <li>La etiqueta <strong>td</strong> es para celdas normales.</li>
+                        </ul>
+                        <p>Formulas ejemplo:</p>
+                        <ul>
+                            <li>table>(tr>th*5)+(tr>td*5)*3</li>
+                            <li>table>(tr>th(td*4))*4</li>
+                        </ul>
+                        <p>Para dar titulos a nuestras tablas se utiliza la etiqueta <strong>captaion.</strong></p>
+                        <p>Para combinar celdas se utiliza las dos siguientes etiquetas <strong>colspan y
+                                rowspan.</strong></p>
+                        <ul>
+                            <li>La etiqueta <strong>colspan</strong> es para juntar dos celda de tipo columna.</li>
+                            <li>La etiqueta <strong>rowspan</strong> es para juntar dos celda de tipo fila.</li>
+                        </ul>
+                        <p>Luego para darles algo de estilos debemos crear los diferentes IDs dentro del CSS.</p>
+                        <h2 class="text-subrayado">Diferentes tipos de tabla</h2>
+                        <h3>Tabla de encabezado de filas con estilo en CSS</h3>
+                        <table border="1" class="tcentro2 text-center">
+                            <tr>
+                                <th>File</th>
+                                <th>Edit</th>
+                                <th>Selection</th>
+                                <th>View</th>
+                                <th>Go</th>
+                            </tr>
+                            <tr>
+                                <td>celda</td>
+                                <td>celda</td>
+                                <td>celda</td>
+                                <td>celda</td>
+                                <td>celda</td>
+                            </tr>
+                            <tr>
+                                <td>celda</td>
+                                <td>celda</td>
+                                <td>celda</td>
+                                <td>celda</td>
+                                <td>celda</td>
+                            </tr>
+                            <tr>
+                                <td>celda</td>
+                                <td>celda</td>
+                                <td>celda</td>
+                                <td>celda</td>
+                                <td>celda</td>
+                            </tr>
+                        </table>
+                        <h3>Tabla de encabezado de columna con estilo odd/even</h3>
+                        <table border="1" class=" tcentro3 text-center">
+                            <tr>
+                                <th>File</th>
+                                <td>celda</td>
+                                <td>celda</td>
+                                <td>celda</td>
+                                <td>celda</td>
+                            </tr>
+                            <tr>
+                                <th>Edit</th>
+                                <td>celda</td>
+                                <td>celda</td>
+                                <td>celda</td>
+                                <td>celda</td>
+                            </tr>
+                            <tr>
+                                <th>Selection</th>
+                                <td>celda</td>
+                                <td>celda</td>
+                                <td>celda</td>
+                                <td>celda</td>
+                            </tr>
+                            <tr>
+                                <th>View</th>
+                                <td>celda</td>
+                                <td>celda</td>
+                                <td>celda</td>
+                                <td>celda</td>
+                            </tr>
+                        </table>
+                        <h3>Tabla con combaciones de celda con estilo CSS</h3>
+                        <table border="1" class="tcentro text-center">
+                            <caption><strong>Horario de clase</strong></caption>
+                            <tr>
+                                <th colspan="6" class="bg-claseBASE2">S1DAW</th>
+                            </tr>
+                            <tr>
+                                <th class="bg-claseBASE">Hora</th>
+                                <th class="bg-claseBASE">Lunes</th>
+                                <th class="bg-claseBASE">Martes</th>
+                                <th class="bg-claseBASE">Miercoles</th>
+                                <th class="bg-claseBASE">Jueves</th>
+                                <th class="bg-claseBASE">Viernes</th>
+                            </tr>
+                            <tr>
+                                <th class="bg-claseBASE">8:15<br>9:10</th>
+                                <td class="bg-claseFOL">FOL<br>Prud. Ga, Es<br>(1 B-301)</td>
+                                <td class="bg-claseENDE">ENDE<br>Polo Or, Ed<br>(1 B-301)</td>
+                                <td rowspan="2" class="bg-claseLMSG">LMSG<br>Puli. Mo, FrJo<br>(1 B-301)</td>
+                                <td rowspan="2" class="bg-clasePROG">PROG<br>Gall. Cr, Di<br>(1 B-301)</td>
+                                <td rowspan="2" class="bg-claseSISI">SISI<br>Mart Ru, To<br>(1 B-301)<br>SISI<br>Atie,
+                                    Ib<br>(1 B-304)</td>
+                            </tr>
+                            <tr>
+                                <th class="bg-claseBASE">9:10<br>10:05</th>
+                                <td rowspan="2" class="bg-clasePROG">PROG<br>Gall. Cr, Di<br>(1 B-301)</td>
+                                <td rowspan="2" class="bg-claseLMSG">LMSG<br>Puli. Mo, FrJo<br>(1 B-301)</td>
+                            </tr>
+                            <tr>
+                                <th class="bg-claseBASE">10:05<br>11:00</th>
+                                <td class="bg-claseING">ING<br>Guti Sa, JoÁn<br>(1 B-301)</td>
+                                <td class="bg-claseBDD">BDD<br>León Dí, JuEf<br>(1 B-301)</td>
+                                <td class="bg-claseFOL">FOL<br>Prud. Ga, Es<br>(1 B-301)</td>
+                            </tr>
+                            <tr>
+                                <td class="bg-claseBASE2"></td>
+                                <th colspan="5" class="bg-claseBASE">recreo</th>
+                            </tr>
+                            <tr>
+                                <th class="bg-claseBASE">11:30<br>12:25</th>
+                                <td rowspan="2" class="bg-claseBDD">BDD<br>León Dí, JuEf<br>(1 B-301)</td>
+                                <td class="bg-claseFOL">FOL<br>Prud. Ga, Es<br>(1 B-301)</td>
+                                <td class="bg-claseENDE">ENDE<br>Polo Or, Ed<br>(1 B-301)</td>
+                                <td class="bg-claseBDD">BDD<br>León Dí, JuEf<br>(1 B-301)</td>
+                                <td rowspan="2" class="bg-clasePROG">PROG<br>Gall. Cr, Di<br>(1 B-301)</td>
+                            </tr>
+                            <tr>
+                                <th class="bg-claseBASE">12:25<br>13:20</th>
+                                <td rowspan="2" class="bg-claseBDD">BDD<br>León Dí, JuEf<br>(1 B-301)</td>
+                                <td rowspan="2" class="bg-claseSISI">SISI<br>Mart Ru, To<br>(1 B-301)<br>SISI<br>Atie,
+                                    Ib<br>(1 B-304)</td>
+                                <td rowspan="2" class="bg-claseSISI">SISI<br>Mart Ru, To<br>(1 B-301)<br>SISI<br>Atie,
+                                    Ib<br>(1 B-304)</td>
+                            </tr>
+                            <tr>
+                                <th class="bg-claseBASE">13:20<br>14:15</th>
+                                <td class="bg-claseENDE">ENDE<br>Polo Or, Ed<br>(1 B-301)</td>
+                                <td class="bg-claseING">ING<br>Guti Sa, JoÁn<br>(1 B-301)</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <h2 class="bg-verde text-center text-white py-3">&copy; Marcos Alarcón Alguacil | NoNiQu</h2>
+        </footer>
+    </div>
+    <script>
+        function opendrawer() {
+            document.getElementById('menu').style.display = 'block';
+            document.getElementById('menu').style.witdh = '100%';
+        }
+    </script>
+</body>
+
+</html>

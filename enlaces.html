@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso HTML5-CSS3</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container shadow">
+        <header>
+            <div class="row align-items-center">
+                <div class="col-3"><img src="img/logoazar12.png" alt="logo" width="50"></div>
+                <div class="col-9">
+                    <span id="btnmenu" onclick="opendrawer()">&#9776;</span>
+                    <nav id="menu">
+                        <ul class="text-right">
+                            <li>
+                                <a href="index.html">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="parrafos.html">
+                                    Párrafos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="enlaces.html">
+                                    Enlaces
+                                </a>
+                            </li>
+                            <li>
+                                <a href="listas.html">
+                                    Listas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tablas.html">
+                                    Tablas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="formularios.html">
+                                    Formularios
+                                </a>
+                            </li>
+                            <li>
+                                <a href="multimedia.html">
+                                    Multimedia
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main class="shadow">
+            <div>
+                <h1 class="text-center bg-verde text-white py-3">HTML5 & CSS3</h1>
+            </div>
+            <div class="px-3">
+                <hr>
+            </div>
+            <div class="px-3">
+                <div id="Home" class="px-3">
+                    <h1 class="text-center">ENLACES</h1>
+                    <div class="py-3">
+                        <p>Para realizar cualquier enlace, un link o un hipervinculo se utiliza la etiqueta
+                            <strong>a</strong> dentro de un párrafo, imagen, etc.
+                        </p>
+                        <h2 class="text-subrayado">Tipos de enlaces:</h2>
+                        <h3>Enlace a nuestra página</h3>
+                        <p>Ir a nuestra página de <a href="index.html"><strong class="text-subrayado">Home</strong></a>,
+                            también podemos ir a otra como <a href="parrafos.html"><strong
+                                    class="text-subrayado">Parrafos</strong></a>, etc.</p>
+                        <p>Este tipo de enlace es para ir a una pagina de la propia pagina web.</p>
+                        <h3>Enlace a una página externa</h3>
+                        <p>Ir a la página de <a href="https://www.google.es"><strong
+                                    class="text-subrayado">Google</strong>.</a></p>
+                        <p>Ejemplo de ir a una página externa cualquiera.</p>
+                        <h3>Enlace a una página externa, pero se abre en una pestaña nueva</h3>
+                        <p>Ir a la página de <a
+                                href="https://www.pccomponentes.com/gigabyte-geforce-rtx-4090-windforce-24gb-gddr6x-dlss3"
+                                target="_blank"><strong class="text-subrayado">PC Componentes</strong></a></p>
+                        <p>Se puede utilizar con cualquier página web externa, pero dejo esta para que un alma
+                            caritativa me regale esto.</p>
+                        <h3>Enlace a un programa de Javascript</h3>
+                        <p>Ir a la página de <a href="javascript:alert('En un futuro sera una imagen!')"><strong
+                                    class="text-subrayado">Pulsa aqui</strong></a></p>
+                        <h3>Enlace a un mail</h3>
+                        <p>Ir a la página de <a href="mailto:webmaster@azarquiel.es"><strong
+                                    class="text-subrayado">Correo</strong></a></p>
+                        <p>Este tipo de enlace esta en deuso porque es un metodo tosco y no esta automatizado.</p>
+                        <h3>Enlace a una imagen</h3>
+                        <p class="text-center"></a><a href="https://www.youtube.com"><img src="img/Youtube_logo.png"
+                                    alt="logoyt" width="10%"></a></p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <h2 class="bg-verde text-center text-white py-3">&copy; Marcos Alarcón Alguacil | NoNiQu</h2>
+        </footer>
+    </div>
+    <script>
+        function opendrawer() {
+            document.getElementById('menu').style.display = 'block';
+            document.getElementById('menu').style.witdh = '100%';
+        }
+    </script>
+</body>
+
+</html>
